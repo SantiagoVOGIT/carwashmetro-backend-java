@@ -1,10 +1,16 @@
 package com.carwashmetro.carwashmetro.domain.user;
 
+import com.carwashmetro.carwashmetro.domain.user.value_objects.DniType;
+import com.carwashmetro.carwashmetro.domain.user.value_objects.UserId;
+import com.carwashmetro.carwashmetro.domain.user.value_objects.UserRole;
+import com.carwashmetro.carwashmetro.domain.user.value_objects.UserStatus;
 import lombok.Builder;
+import lombok.Getter;
+import shared.domain.CreatedAt;
 
-import java.time.ZonedDateTime;
 
 @Builder
+@Getter
 public class User {
 
     private final UserId id;
@@ -19,52 +25,13 @@ public class User {
 
     private final String phoneNumber;
 
-    private final Email email;
+    private final String email;
 
     private final UserRole role;
 
     private final UserStatus status;
 
-    private final ZonedDateTime createAt;
+    private final CreatedAt createAt;
 
-    public UserId getId() {
-        return id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getDniNumber() {
-        return dniNumber;
-    }
-
-    public DniType getDniType() {
-        return dniType;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public Email getEmail() {
-        return email;
-    }
-
-    public UserRole getRole() {
-        return role;
-    }
-
-    public UserStatus getStatus() {
-        return status;
-    }
-
-    public ZonedDateTime getCreateAt() {
-        return createAt;
-    }
 }
 

@@ -1,4 +1,4 @@
 package com.carwashmetro.carwashmetro.domain.employee;
 
-public class EmployeeId {
+public class ReservationFactory {
 }

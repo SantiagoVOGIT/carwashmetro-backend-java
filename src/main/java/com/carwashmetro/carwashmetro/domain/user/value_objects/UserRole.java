@@ -1,4 +1,4 @@
-package com.carwashmetro.carwashmetro.domain.user;
+package com.carwashmetro.carwashmetro.domain.user.value_objects;
 
 public enum UserRole {
 

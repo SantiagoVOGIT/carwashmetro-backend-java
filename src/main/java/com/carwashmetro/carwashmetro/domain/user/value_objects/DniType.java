@@ -1,10 +1,13 @@
-package com.carwashmetro.carwashmetro.domain.user;
+package com.carwashmetro.carwashmetro.domain.user.value_objects;
 
 public enum DniType {
 
     CC("CÉDULA CIUDADANÍA"),
+
     CE("CÉDULA EXTRANJERÍA"),
+
     TI("TARJETA IDENTIDAD"),
+
     TE("TARJETA EXTRANJERÍA");
 
     private final String value;

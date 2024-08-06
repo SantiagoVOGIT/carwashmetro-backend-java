@@ -1,9 +1,9 @@
-package com.carwashmetro.carwashmetro.domain.user;
+package com.carwashmetro.carwashmetro.domain.user.value_objects;
 
 public enum UserStatus {
 
-    ACTIVE("CÉDULA CIUDADANÍA"),
-    INACTIVE("CÉDULA EXTRANJERÍA"),
+    ACTIVE("ACTIVO"),
+    INACTIVE("INACTIVO"),
     SUSPENDED ("SUSPENDIDO");
 
     private final String value;
